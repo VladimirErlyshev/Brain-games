@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import acquaintance from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
+const welcomeMessage = 'Welcome to the Brain Games!';
+console.log(welcomeMessage);
 acquaintance();
