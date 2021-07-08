@@ -5,7 +5,6 @@ import isEven from '../helpers/isEven.js';
 
 export default () => {
   const userName = acquaintance();
-  const randomNumber = getRandomNumber();
   const tryAgainMessage = `Let's try again, ${userName}!`;
   const congratulationsMessage = `Congratulations, ${userName}!`;
 
@@ -13,6 +12,7 @@ export default () => {
   let countRightAnswer = 0;
 
   for (let round = 1; round <= 3; round += 1) {
+    const randomNumber = getRandomNumber();
     console.log(`Question: ${randomNumber}`);
     const answer = readlineSync.question('Your answer ');
 
