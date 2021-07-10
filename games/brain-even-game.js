@@ -22,12 +22,12 @@ export default () => {
     ) {
       console.log('Correct');
       countRightAnswer += 1;
-    } else if (answer === 'yes') {
-      console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
+    } else if (isEven(randomNumber)) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.`);
       console.log(tryAgainMessage);
       break;
     } else {
-      console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`);
       console.log(tryAgainMessage);
       break;
     }
