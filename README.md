@@ -5,5 +5,5 @@
 
 [![Build Status](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml)
 
-Пример работы проекта 
+Пример работы проекта brain-even
 (https://asciinema.org/a/NIiKasBTYtly7ZXGGydsFWK6t)

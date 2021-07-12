@@ -4,10 +4,10 @@ import getRandomNumber from '../helpers/mathHelper/getRandomNumber.js';
 import isEven from '../helpers/mathHelper/isEven.js';
 import showWrongAnswerMessage from '../helpers/messagesHelper/showWrongAnswerMessage.js';
 import showCongratulationsMessage from '../helpers/messagesHelper/showCongratulationsMessage.js';
+import showTryAgainMessage from '../helpers/messagesHelper/showTryAgainMessage.js';
 
 export default () => {
   const userName = acquaintance();
-  const tryAgainMessage = `Let's try again, ${userName}!`;
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let countRightAnswer = 0;
@@ -25,11 +25,11 @@ export default () => {
       countRightAnswer += 1;
     } else if (isEven(randomNumber)) {
       showWrongAnswerMessage(answer, 'yes');
-      console.log(tryAgainMessage);
+      showTryAgainMessage(userName);
       break;
     } else {
       showWrongAnswerMessage(answer, 'no');
-      console.log(tryAgainMessage);
+      showTryAgainMessage(userName);
       break;
     }
   }
