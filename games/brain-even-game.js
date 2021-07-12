@@ -1,12 +1,13 @@
 import readlineSync from 'readline-sync';
 import acquaintance from '../src/cli.js';
-import getRandomNumber from '../helpers/getRandomNumber.js';
-import isEven from '../helpers/isEven.js';
+import getRandomNumber from '../helpers/mathHelper/getRandomNumber.js';
+import isEven from '../helpers/mathHelper/isEven.js';
+import showWrongAnswerMessage from '../helpers/messagesHelper/showWrongAnswerMessage.js';
+import showCongratulationsMessage from '../helpers/messagesHelper/showCongratulationsMessage.js';
 
 export default () => {
   const userName = acquaintance();
   const tryAgainMessage = `Let's try again, ${userName}!`;
-  const congratulationsMessage = `Congratulations, ${userName}!`;
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let countRightAnswer = 0;
@@ -23,17 +24,17 @@ export default () => {
       console.log('Correct');
       countRightAnswer += 1;
     } else if (isEven(randomNumber)) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.`);
+      showWrongAnswerMessage(answer, 'yes');
       console.log(tryAgainMessage);
       break;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`);
+      showWrongAnswerMessage(answer, 'no');
       console.log(tryAgainMessage);
       break;
     }
   }
 
   if (countRightAnswer === 3) {
-    console.log(congratulationsMessage);
+    showCongratulationsMessage(userName);
   }
 };
