@@ -5,7 +5,7 @@ const gameRule = 'What number is missing in the progression?';
 
 const gameData = () => {
   let value = getRandomValue();
-  const progressionStep = getRandomValue(11);
+  const progressionStep = getRandomValue(11) + 1;
   const progression = [];
   for (let i = 0; i < 10; i += 1) {
     progression.push(value);
