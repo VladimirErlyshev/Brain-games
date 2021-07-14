@@ -5,6 +5,18 @@
 
 [![Build Status](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml)
 
+#brain-games
+
+Проект содержит 5 консольных игр
+
+##Установка
+
+Для установки проекта скачайте его с git-hub и установите локально с помощью команды
+
+###npm-link
+
+выполненной в корне проекта
+
 Пример работы игры brain-even
 [![asciicast](https://asciinema.org/a/424588.svg)](https://asciinema.org/a/424588)
 
