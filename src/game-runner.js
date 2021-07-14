@@ -1,0 +1,2 @@
+const roundsCount = 3;
+
