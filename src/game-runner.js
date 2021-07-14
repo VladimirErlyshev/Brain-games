@@ -21,7 +21,7 @@ const gameRunner = (gameRule, gameData) => {
     }
   }
 
-  showMessage(`Congratulations, ${userName}`);
+  showMessage(`Congratulations, ${userName}!`);
 };
 
 export default gameRunner;
