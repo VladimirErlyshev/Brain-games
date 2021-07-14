@@ -11,4 +11,12 @@ const getGCD = (n, m) => {
   return n;
 };
 
+const isPrime = (number) => {
+  for (let i = 2, s = Math.sqrt(number); i <= s; i += 1) {
+    if (number % i === 0) return false;
+  }
+  return number > 1;
+};
+
 export { getRandomValue, isEven, getGCD };
+export { isPrime };
