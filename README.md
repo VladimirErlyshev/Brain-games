@@ -6,7 +6,10 @@
 [![Build Status](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml)
 
 Пример работы игры brain-even
-(https://asciinema.org/a/NIiKasBTYtly7ZXGGydsFWK6t)
+[![asciicast](https://asciinema.org/a/NIiKasBTYtly7ZXGGydsFWK6t.svg)](https://asciinema.org/a/NIiKasBTYtly7ZXGGydsFWK6t)
 
 Пример работы игры brain-calc
-(https://asciinema.org/a/wud6ofeRhMfCkUE3PYLFuukiG)
+[![asciicast](https://asciinema.org/a/wud6ofeRhMfCkUE3PYLFuukiG.svg)](https://asciinema.org/a/wud6ofeRhMfCkUE3PYLFuukiG)
+
+Пример работы игры brain-gcd
+[![asciicast](https://asciinema.org/a/Q3NMcG4ZqjX70MIGXzc67IC2F.svg)](https://asciinema.org/a/Q3NMcG4ZqjX70MIGXzc67IC2F)
