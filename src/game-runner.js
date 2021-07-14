@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { showMessage } from './helpers/messages-helper.js';
+import showMessage from './helpers/messages-helper.js';
 
 const roundsCount = 3;
 
