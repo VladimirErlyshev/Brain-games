@@ -13,3 +13,6 @@
 
 Пример работы игры brain-gcd
 [![asciicast](https://asciinema.org/a/Q3NMcG4ZqjX70MIGXzc67IC2F.svg)](https://asciinema.org/a/Q3NMcG4ZqjX70MIGXzc67IC2F)
+
+Пример работы игры brain-progression
+[![asciicast](https://asciinema.org/a/425506.svg)](https://asciinema.org/a/425506)
