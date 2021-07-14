@@ -9,7 +9,7 @@ const gameData = () => {
   const gameQuestion = `${firstValue} ${secondValue}`;
   const correctAnswer = getGCD(firstValue, secondValue);
 
-  return [gameQuestion, correctAnswer];
+  return [gameQuestion, String(correctAnswer)];
 };
 
 export default () => gameRunner(gameRule, gameData);
