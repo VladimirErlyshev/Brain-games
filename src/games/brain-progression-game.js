@@ -14,9 +14,9 @@ const gameData = () => {
   const hiddenIndex = getRandomValue(progression.length);
   const correctAnswer = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
-  const gameQuestion = progression.join();
+  const gameQuestion = progression.join(' ');
 
-  return [gameQuestion, correctAnswer];
+  return [gameQuestion, String(correctAnswer)];
 };
 
 export default () => gameRunner(gameRule, gameData);
