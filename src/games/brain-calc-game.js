@@ -3,7 +3,7 @@ import { getRandomValue } from '../helpers/math-helper.js';
 
 const gameRule = 'What is the result of the expression?';
 
-const getMathAction = (firstValue, secondValue, randomMathAction) => {
+const getMathExpression = (firstValue, secondValue, randomMathAction) => {
   switch (randomMathAction) {
     case '+':
       return firstValue + secondValue;
@@ -25,7 +25,7 @@ const gameData = () => {
   const firstValue = getRandomValue(0, 100);
   const secondValue = getRandomValue(0, 100);
   const gameQuestion = `${firstValue} ${randomMathAction} ${secondValue}`;
-  const correctAnswer = getMathAction(firstValue, secondValue, randomMathAction);
+  const correctAnswer = getMathExpression(firstValue, secondValue, randomMathAction);
 
   return [gameQuestion, String(correctAnswer)];
 };
