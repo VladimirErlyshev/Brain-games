@@ -1,4 +1,4 @@
-import gameRunner from '../game-runner.js';
+import playGame from '../game-runner.js';
 import { getRandomValue } from '../helpers/math-helper.js';
 
 const gameRule = 'What number is missing in the progression?';
@@ -19,4 +19,4 @@ const gameData = () => {
   return [gameQuestion, String(correctAnswer)];
 };
 
-export default () => gameRunner(gameRule, gameData);
+export default () => playGame(gameRule, gameData);

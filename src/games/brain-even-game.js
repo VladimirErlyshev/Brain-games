@@ -1,4 +1,4 @@
-import gameRunner from '../game-runner.js';
+import playGame from '../game-runner.js';
 import { isEven, getRandomValue } from '../helpers/math-helper.js';
 
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -9,4 +9,4 @@ const gameData = () => {
   return [gameQuestion, correctAnswer];
 };
 
-export default () => gameRunner(gameRule, gameData);
+export default () => playGame(gameRule, gameData);

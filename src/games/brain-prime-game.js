@@ -1,4 +1,4 @@
-import gameRunner from '../game-runner.js';
+import playGame from '../game-runner.js';
 import { getRandomValue, isPrime } from '../helpers/math-helper.js';
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -10,4 +10,4 @@ const gameData = () => {
   return [gameQuestion, correctAnswer];
 };
 
-export default () => gameRunner(gameRule, gameData);
+export default () => playGame(gameRule, gameData);
