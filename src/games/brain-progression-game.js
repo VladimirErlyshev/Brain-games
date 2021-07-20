@@ -11,7 +11,7 @@ const gameData = () => {
     progression.push(value);
     value += progressionStep;
   }
-  const hiddenIndex = getRandomValue(0, progression.length);
+  const hiddenIndex = getRandomValue(0, progression.length - 1);
   const correctAnswer = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
   const gameQuestion = progression.join(' ');
