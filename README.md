@@ -5,15 +5,15 @@
 
 [![Build Status](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/VladimirErlyshev/frontend-project-lvl1/actions/workflows/checks.yml)
 
-#brain-games
+# brain-games
 
 Проект содержит 5 консольных игр
 
-##Установка
+## Установка
 
 Для установки проекта скачайте его с git-hub и установите локально с помощью команды
 
-###npm-link
+## `npm-link`
 
 выполненной в корне проекта
 
