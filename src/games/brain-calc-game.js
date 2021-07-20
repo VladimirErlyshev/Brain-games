@@ -5,9 +5,9 @@ const gameRule = 'What is the result of the expression?';
 
 const gameData = () => {
   const mathActions = ['+', '-', '*'];
-  const randomMathAction = mathActions[getRandomValue(3)];
-  const firstValue = getRandomValue();
-  const secondValue = getRandomValue();
+  const randomMathAction = mathActions[getRandomValue(0, 2)];
+  const firstValue = getRandomValue(0, 100);
+  const secondValue = getRandomValue(0, 100);
   const gameQuestion = `${firstValue} ${randomMathAction} ${secondValue}`;
   let correctAnswer;
 

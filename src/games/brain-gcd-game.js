@@ -4,8 +4,8 @@ import { getRandomValue, getGCD } from '../helpers/math-helper.js';
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
 const gameData = () => {
-  const firstValue = getRandomValue();
-  const secondValue = getRandomValue();
+  const firstValue = getRandomValue(0, 100);
+  const secondValue = getRandomValue(0, 100);
   const gameQuestion = `${firstValue} ${secondValue}`;
   const correctAnswer = getGCD(firstValue, secondValue);
 
