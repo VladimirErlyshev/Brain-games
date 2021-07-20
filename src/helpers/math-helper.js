@@ -1,5 +1,4 @@
-// default value is in between 0 from 100
-const getRandomValue = (max = 101) => Math.floor(Math.random() * max);
+const getRandomValue = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const isEven = (number) => number % 2 === 0;
 
