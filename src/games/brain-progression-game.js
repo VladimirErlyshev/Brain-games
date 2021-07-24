@@ -3,7 +3,7 @@ import { getRandomValue } from '../helpers/math-helper.js';
 
 const gameRule = 'What number is missing in the progression?';
 
-const gameData = () => {
+const generateProgression = () => {
   let value = getRandomValue(0, 100);
   const progressionStep = getRandomValue(1, 10);
   const progression = [];
@@ -11,6 +11,12 @@ const gameData = () => {
     progression.push(value);
     value += progressionStep;
   }
+
+  return progression;
+};
+
+const gameData = () => {
+  const progression = generateProgression();
   const hiddenIndex = getRandomValue(0, progression.length - 1);
   const correctAnswer = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
